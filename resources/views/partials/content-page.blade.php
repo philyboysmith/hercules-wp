@@ -13,7 +13,7 @@
 <?php
     $loop = new WP_Query(array('post_type' => 'steering_group', 'paged' => $paged, 'orderby' => 'title'));
     if ($loop->have_posts()) :
-        echo '<div class="flex">';
+        echo '<div class="flex flex-wrap">';
         while ($loop->have_posts()) : $loop->the_post(); ?>
             <a href="<?php the_permalink(); ?>"  class="h-48 w-48 block bg-blue-600 hover:bg-blue-800 rounded p-4 shadow-inner shadow-md mr-4 mb-4 ">
                 <h2 class="text-white">
