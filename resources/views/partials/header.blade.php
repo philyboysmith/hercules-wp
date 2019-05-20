@@ -15,7 +15,7 @@
                 </div>
               </div>
 
-              <button class="md:hidden rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-blue-700 hover:bg-blue-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md" id="menuNav">
+              <button class="md:hidden rounded-lg px-4 py-3 bg-blue-700 hover:bg-blue-600 md:text-lg text-white font-semibold leading-tight shadow-md mr-6" id="menuNav">
               <i class="fas fa-bars mr-2 flex-no-shrink"></i>Menu</button>
 
               <div id="menu" class="w-full md:w-auto hidden md:flex flex-grow lg:w-3/4 xl:w-4/5 justify-end px-6 border-t-2 border-b-2 pt-3 md:border-0 md:pt-0">
