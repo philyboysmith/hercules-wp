@@ -39,7 +39,8 @@ main {
 }
 
 .logo-wrapper {
-    width: calc(100% - 100px);
+    width: 66.66%;
+    max-width: calc(100% - 116px);
 }
 
 @screen md{

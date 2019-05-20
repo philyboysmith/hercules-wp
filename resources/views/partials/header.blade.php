@@ -10,7 +10,7 @@
                 <div class="flex items-center">
                   <a href="/" class="flex flex-col py-6 md:py-12 items-start">
                     <img src="@asset('images/logo.svg')" class="w-full mb-2"/>
-                    <span class="font-bold text-xs text-center uppercase">A Duchenne UK Global Collaboration</span>
+                    <span class="font-bold text-xs md:text-center uppercase">A Duchenne UK Global Collaboration</span>
                   </a>
                 </div>
               </div>
