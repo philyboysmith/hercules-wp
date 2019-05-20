@@ -2,7 +2,7 @@
 
       
         <div class="container">
-          <div class="border-b-2 border-gray-200 flex flex-col justify-center ">
+          <div class="md:border-b-2 border-gray-200 flex flex-col justify-center ">
             <div class="md:flex items-center -mx-6">
 
               
@@ -15,9 +15,9 @@
                 </div>
               </div>
 
-              <div class="md:flex flex-grow lg:w-3/4 xl:w-4/5 justify-end px-6">
+              <div class="md:flex flex-grow lg:w-3/4 xl:w-4/5 justify-end px-6 border-t-2 border-b-2 pt-3 md:border-0 md:pt-0">
               @if (has_nav_menu('primary_navigation'))
-                  {!! wp_nav_menu(['depth'=>1, 'theme_location' => 'primary_navigation', 'menu_class' => 'nav md:flex']) !!}
+                  {!! wp_nav_menu(['depth'=>1, 'theme_location' => 'primary_navigation', 'menu_class' => 'nav flex flex-wrap md:flex-no-wrap']) !!}
                 @endif
               </div>
 

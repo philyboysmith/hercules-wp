@@ -43,7 +43,7 @@ li.menu-item {
 }
 
 li.menu-item a {
-    @apply block;
+    @apply block pr-3;
     @screen md {
         @apply pr-6;
     }
