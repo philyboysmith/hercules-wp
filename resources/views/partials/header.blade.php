@@ -3,10 +3,10 @@
       
         <div class="container">
           <div class="md:border-b-2 border-gray-200 flex flex-col justify-center ">
-            <div class="md:flex items-center -mx-6">
+            <div class="flex flex-wrap md:flex-no-wrap justify-between items-center -mx-6">
 
               
-              <div class="w-full md:w-1/3 max-w-xs px-6">
+              <div class="logo-wrapper md:w-1/3 max-w-xs px-6">
                 <div class="flex items-center">
                   <a href="/" class="flex flex-col py-6 md:py-12 items-start">
                     <img src="@asset('images/logo.svg')" class="w-full mb-2"/>
@@ -15,9 +15,12 @@
                 </div>
               </div>
 
-              <div class="md:flex flex-grow lg:w-3/4 xl:w-4/5 justify-end px-6 border-t-2 border-b-2 pt-3 md:border-0 md:pt-0">
+              <button class="md:hidden rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-blue-700 hover:bg-blue-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md" id="menuNav">
+              <i class="fas fa-bars mr-2 flex-no-shrink"></i>Menu</button>
+
+              <div id="menuNav" class="w-full md:w-auto hidden md:flex flex-grow lg:w-3/4 xl:w-4/5 justify-end px-6 border-t-2 border-b-2 pt-3 md:border-0 md:pt-0">
               @if (has_nav_menu('primary_navigation'))
-                  {!! wp_nav_menu(['depth'=>1, 'theme_location' => 'primary_navigation', 'menu_class' => 'nav flex flex-wrap md:flex-no-wrap']) !!}
+                  {!! wp_nav_menu(['depth'=>1, 'theme_location' => 'primary_navigation', 'menu_class' => 'nav flex flex-col md:flex-row']) !!}
                 @endif
               </div>
 

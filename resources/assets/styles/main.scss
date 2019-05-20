@@ -38,6 +38,16 @@ main {
     }
 }
 
+.logo-wrapper {
+    width: calc(100% - 100px);
+}
+
+@screen md{
+    #menu {
+        display: flex!important;
+    }
+}
+
 li.menu-item {
     @apply mb-3 text-gray-500 uppercase tracking-wide font-bold text-sm ;
 }
