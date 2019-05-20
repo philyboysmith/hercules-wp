@@ -262,3 +262,21 @@ function monkey_download_file()
     }
 }
   add_action('init', 'monkey_download_file');
+
+  function my_login_logo()
+  {
+      ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(/wp-content/themes/hercules/dist/images/logo.svg);
+		height:47px;
+		width:272px;
+		background-size: 272px 47px;
+		background-repeat: no-repeat;
+            padding-bottom: 0;
+            margin-bottom: 1rem;
+        }
+    </style>
+<?php
+  }
+add_action('login_enqueue_scripts', 'my_login_logo');

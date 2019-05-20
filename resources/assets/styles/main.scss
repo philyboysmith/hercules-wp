@@ -139,15 +139,24 @@ main ol {
     }
 }
 
+@screen lg{
+    .lwa-default {
+        @apply flex justify-center;
+    }
+}
+
 
 main ul a:not(.sidebar-link),
 main p a:not(.sidebar-link){
     @apply underline text-blue-800;
 }
 
-.lwa-form {
+.lwa-form,
+.lwa-remember {
     @apply w-full max-w-sm bg-white max-w-xl mx-auto p-6 border shadow-md my-12;
-
+    @screen lg{
+        @apply mx-6
+    }
     table tr {
        @apply  mb-6;
        @screen md {
@@ -177,7 +186,7 @@ main p a:not(.sidebar-link){
             @apply w-2/3;
        }
     }
-    .lwa-submit {
+    .lwa-submit, {
         @apply -mt-6 flex-col
     }
     .lwa-submit-links {
@@ -185,11 +194,13 @@ main p a:not(.sidebar-link){
             @apply text-sm text-left inline ml-3;
         }
     }
-    .lwa-links-remember {
-        @apply block text-blue-500 font-bold text-sm pr-4 ;
+    .lwa-links-remember,
+    .lwa-links-remember-cancel {
+        @apply block text-blue-500 font-bold text-sm pr-4 mt-2;
     }
     
-    #lwa_wp-submit {
+    #lwa_wp-submit,
+    .lwa-button-remember {
         @apply shadow bg-blue-500 text-white font-bold py-2 px-4 rounded;
         &:hover {
             @apply bg-blue-400 ;
