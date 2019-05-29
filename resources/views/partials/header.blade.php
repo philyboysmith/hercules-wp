@@ -8,7 +8,7 @@
               
               <div class="logo-wrapper md:w-1/3 px-6" style="max-width: 15rem;">
                 <div class="flex items-center">
-                  <a href="/" class="flex flex-col py-6 md:py-12 items-start">
+                  <a href="/" class="flex flex-col py-6 md:py-8 items-start">
                     <img src="@asset('images/logo.svg')" class="w-full mb-2"/>
                     <span class="font-bold text-xs md:text-center uppercase">A Duchenne UK Global Collaboration</span>
                   </a>
