@@ -20,7 +20,7 @@
 
               <div id="menu" class="w-full md:w-auto hidden md:flex flex-grow lg:w-3/4 xl:w-4/5 justify-end px-6 border-t-2 border-b-2 pt-3 md:border-0 md:pt-0">
               @if (has_nav_menu('primary_navigation'))
-                  {!! wp_nav_menu(['depth'=>1, 'theme_location' => 'primary_navigation', 'menu_class' => 'nav flex flex-col md:flex-row']) !!}
+                  {!! wp_nav_menu(['depth'=>1, 'theme_location' => 'primary_navigation', 'menu_class' => 'nav flex flex-col md:flex-row md:flex-wrap']) !!}
                 @endif
               </div>
 
