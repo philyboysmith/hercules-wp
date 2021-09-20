@@ -2,7 +2,7 @@
   <div class="container py-8 border-b-2 border-blue-800 ">
     <div class="md:flex items-center">
       <div class="flex-1">
-        <img src="@asset('images/duchenne_logo.svg')" class="w-24" alt="Duchenne UK">
+        <img src="https://www.duchenneuk.org/wp-content/themes/duchenne/src/img/svgs/footer_logo.svg" class="w-24 mb-2" alt="Duchenne UK">
       </div>
       <ul class="flex">
         <li class="mr-4"><a target="_blank" href="https://twitter.com/DuchenneUK"><i class="mr-1 fab fa-twitter" aria-hidden="true"></i><span class="visuallyhidden">Twitter</span></a></li>
